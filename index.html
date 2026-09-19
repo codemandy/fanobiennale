@@ -40,6 +40,7 @@
 
   #program {
     background: #ffffff;
+    cursor: pointer;
   }
 
   #program img {
@@ -75,7 +76,14 @@
       window.scrollTo(0, 0);
     }
 
+    function showIntro() {
+      program.hidden = true;
+      intro.hidden = false;
+      window.scrollTo(0, 0);
+    }
+
     intro.addEventListener('click', showProgram);
+    program.addEventListener('click', showIntro);
   </script>
 </body>
 </html>
